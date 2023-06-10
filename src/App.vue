@@ -39,23 +39,35 @@
         <button>Tweet</button>
       </div>
     </div>
-    <div id="tweet">
-      <div>SpaceX</div>
-      <div>Liftoff!</div>
-      <div id="media"></div>
-      <div>
-        <message-reply-outline-icon :size="26" class="icon"/>
-        <repeat-variant-icon :size="26" class="icon"/>
-        <heart-outline-icon :size="26" class="icon"/>
-        <poll-icon :size="26" class="icon"/>
-        <bookmark-outline-icon :size="26" class="icon"/>
-      </div>
-    </div>
+    
+    <tweet></tweet>
   </div>
   <div id="ads">
     <div>Search Twitter</div>
-    <div>What's happening</div>
-    <div>Who to follow</div>
+    <div>What's happening
+      <div>
+        <div>
+          Videogames - Trending
+        </div>
+        <div>
+          Final Fantasy
+        </div>
+        <div>
+          65K tweets
+        </div>
+      </div>
+      
+     
+      
+    </div>
+
+    <div>Who to follow
+      <div>
+        <div>Google</div>
+        <div>@google</div>
+        <div><button>Follow</button></div>
+      </div>
+    </div>
   </div>
   </div>
   
@@ -121,14 +133,11 @@ import PollIcon from 'vue-material-design-icons/Poll.vue';
 import EmoticonOutlineIcon from 'vue-material-design-icons/EmoticonOutline.vue';
 import TimerOutlineIcon from 'vue-material-design-icons/TimerOutline.vue';
 
-import MessageReplyOutlineIcon from 'vue-material-design-icons/EmoticonOutline.vue';
-import RepeatVariantIcon from 'vue-material-design-icons/RepeatVariant.vue';
-import HeartOutlineIcon from 'vue-material-design-icons/HeartOutline.vue';
+import Tweet from './components/Tweet.vue'
 
 export default {
     components: { TwitterIcon, HomeIcon, SearchWebIcon, BellIcon, EmailOutlineIcon, ListBoxOutlineIcon, 
       BookmarkOutlineIcon,CheckDecagramOutlineIcon, AccountOutlineIcon, SettingsHelperIcon, ImageOutlineIcon,
-      FileGifBoxIcon, PollIcon, EmoticonOutlineIcon, TimerOutlineIcon, MessageReplyOutlineIcon, RepeatVariantIcon,
-      HeartOutlineIcon},
+      FileGifBoxIcon, PollIcon, EmoticonOutlineIcon, TimerOutlineIcon, Tweet},
 }
 </script>
