@@ -3,22 +3,7 @@
 <template id="template">
   <div id="tmp">
     <div id="left">
-      <div id="nav-bar">
-        <div id="logo">
-          <twitter-icon :size="36" class="icon"/>
-        </div>
-        <div><home-icon :size="36" class="icon"/> Home</div>
-        <div><search-web-icon :size="36" class="icon"/> Explore</div>
-        <div><bell-icon :size="36" class="icon"/>Notifications</div>
-        <div><email-outline-icon :size="36" class="icon"/>Messages</div>
-        <div><list-box-outline-icon :size="36" class="icon"/>Lists</div>
-        <div><bookmark-outline-icon :size="36" class="icon"/>Bookmarks</div>
-        <div><check-decagram-outline-icon :size="36" class="icon"/>Verified</div>
-        <div><account-outline-icon :size="36" class="icon"/>Profile</div>
-        <div><settings-helper-icon :size="36" class="icon"/>Options</div>
-        <button>Tweet</button>
-      
-    </div>
+      <navigation-bar></navigation-bar>
   <div id="profile-menu">
         <div id="profile-picture"></div>
         <div>Elon Musk</div>
@@ -42,32 +27,9 @@
     
     <tweet></tweet>
   </div>
-  <div id="ads">
-    <div>Search Twitter</div>
-    <div>What's happening
-      <div>
-        <div>
-          Videogames - Trending
-        </div>
-        <div>
-          Final Fantasy
-        </div>
-        <div>
-          65K tweets
-        </div>
-      </div>
-      
-     
-      
-    </div>
-
-    <div>Who to follow
-      <div>
-        <div>Google</div>
-        <div>@google</div>
-        <div><button>Follow</button></div>
-      </div>
-    </div>
+  <div id="right">
+    <trending-bar></trending-bar>
+    <who-to-follow></who-to-follow>
   </div>
   </div>
   
@@ -100,13 +62,9 @@
   align-items: flex-end;
 }
 
-#nav-bar{
-  display: flex;
-  flex-direction: column;
-  
-}
 
-#ads{
+
+#right{
   flex: 1;
 }
 #profile-menu{
@@ -116,16 +74,7 @@
 </style>
 
 <script>
-import TwitterIcon from 'vue-material-design-icons/Twitter.vue';
-import HomeIcon from 'vue-material-design-icons/Home.vue';
-import SearchWebIcon from 'vue-material-design-icons/SearchWeb.vue';
-import BellIcon from 'vue-material-design-icons/Bell.vue';
-import EmailOutlineIcon from 'vue-material-design-icons/EmailOutline.vue';
-import ListBoxOutlineIcon from 'vue-material-design-icons/ListBoxOutline.vue';
-import BookmarkOutlineIcon from 'vue-material-design-icons/BookmarkOutline.vue';
-import CheckDecagramOutlineIcon from 'vue-material-design-icons/CheckDecagramOutline.vue';
-import AccountOutlineIcon from 'vue-material-design-icons/AccountOutline.vue';
-import SettingsHelperIcon from 'vue-material-design-icons/SettingsHelper.vue';
+
 
 import ImageOutlineIcon from 'vue-material-design-icons/ImageOutline.vue';
 import FileGifBoxIcon from 'vue-material-design-icons/FileGifBox.vue';
@@ -134,10 +83,12 @@ import EmoticonOutlineIcon from 'vue-material-design-icons/EmoticonOutline.vue';
 import TimerOutlineIcon from 'vue-material-design-icons/TimerOutline.vue';
 
 import Tweet from './components/Tweet.vue'
+import WhoToFollow from './components/WhoToFollow.vue'
+import TrendingBar from './components/TrendingBar.vue'
+import NavigationBar from './components/NavigationBar.vue'
 
 export default {
-    components: { TwitterIcon, HomeIcon, SearchWebIcon, BellIcon, EmailOutlineIcon, ListBoxOutlineIcon, 
-      BookmarkOutlineIcon,CheckDecagramOutlineIcon, AccountOutlineIcon, SettingsHelperIcon, ImageOutlineIcon,
-      FileGifBoxIcon, PollIcon, EmoticonOutlineIcon, TimerOutlineIcon, Tweet},
+    components: {ImageOutlineIcon,
+      FileGifBoxIcon, PollIcon, EmoticonOutlineIcon, TimerOutlineIcon, Tweet, WhoToFollow, TrendingBar, NavigationBar},
 }
 </script>
