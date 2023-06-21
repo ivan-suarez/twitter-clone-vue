@@ -1,9 +1,18 @@
 <template>
     <div>Who to follow
-      <div>
-        <div>Google</div>
-        <div>@google</div>
-        <div><button>Follow</button></div>
-      </div>
+      <RecommendedAccount></RecommendedAccount>
+      <RecommendedAccount></RecommendedAccount>
+      <RecommendedAccount></RecommendedAccount>
     </div>
 </template>
+<script>
+
+import RecommendedAccount from './RecommendedAccount.vue';
+
+export default{
+  components: {
+        RecommendedAccount
+    }
+}
+
+</script>

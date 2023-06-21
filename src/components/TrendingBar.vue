@@ -1,19 +1,26 @@
 <template>
    <div id ="ads">
     <div>Search Twitter</div>
-    <div>What's happening
-      <div>
-        <div>
-          Videogames - Trending
-        </div>
-        <div>
-          Final Fantasy
-        </div>
-        <div>
-          65K tweets
-        </div>
-      </div>
+    <div><h2>What's happening</h2>
+      <Trend></Trend>
+      <Trend></Trend>
+      <Trend></Trend>
     </div>
    </div> 
     
 </template>
+<style scoped>
+  
+</style>
+<script>
+
+
+
+import Trend from './Trend.vue';
+
+export default{
+    components: {
+        Trend
+    }
+}
+</script>
