@@ -1,6 +1,8 @@
 # tw-clone
 
-This template should help get you started developing with Vue 3 in Vite.
+![Alt text](screenshot.png)
+
+A non-functional Twitter frontend clone, just for CSS practice.
 
 ## Recommended IDE Setup
 
