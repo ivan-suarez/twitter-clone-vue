@@ -3,15 +3,15 @@
         <div id="logo">
           <twitter-icon :size="36" class="icon"/>
         </div>
-        <div><home-icon :size="36" class="icon"/> Home</div>
-        <div><search-web-icon :size="36" class="icon"/> Explore</div>
-        <div><bell-icon :size="36" class="icon"/>Notifications</div>
-        <div><email-outline-icon :size="36" class="icon"/>Messages</div>
-        <div><list-box-outline-icon :size="36" class="icon"/>Lists</div>
-        <div><bookmark-outline-icon :size="36" class="icon"/>Bookmarks</div>
-        <div><check-decagram-outline-icon :size="36" class="icon"/>Verified</div>
-        <div><account-outline-icon :size="36" class="icon"/>Profile</div>
-        <div><settings-helper-icon :size="36" class="icon"/>Options</div>
+        <div class="nav-bar-item"><home-icon :size="36" class="icon"/> <span>Home</span></div>
+        <div class="nav-bar-item"><search-web-icon :size="36" class="icon"/><span>Explore</span> </div>
+        <div class="nav-bar-item"><bell-icon :size="36" class="icon"/><span>Notifications</span></div>
+        <div class="nav-bar-item"><email-outline-icon :size="36" class="icon"/><span>Messages</span></div>
+        <div class="nav-bar-item"><list-box-outline-icon :size="36" class="icon"/><span>Lists</span></div>
+        <div class="nav-bar-item"><bookmark-outline-icon :size="36" class="icon"/><span>Bookmarks</span></div>
+        <div class="nav-bar-item"><check-decagram-outline-icon :size="36" class="icon"/><span>Verified</span></div>
+        <div class="nav-bar-item"><account-outline-icon :size="36" class="icon"/><span>Profile</span></div>
+        <div class="nav-bar-item"><settings-helper-icon :size="36" class="icon"/><span>Options</span></div>
         <button>Tweet</button>
       
     </div>
@@ -21,6 +21,13 @@
     display: flex;
     flex-direction: column;
   }
+    .nav-bar-item{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      font-size: 20px;
+    }
 </style>
 
 <script>
