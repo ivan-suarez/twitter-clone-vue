@@ -1,5 +1,5 @@
 <template>
-    <div><h2>Who to follow</h2>
+    <div style="background-color: lightgray;"><h2>Who to follow</h2>
       <RecommendedAccount></RecommendedAccount>
       <RecommendedAccount></RecommendedAccount>
       <RecommendedAccount></RecommendedAccount>

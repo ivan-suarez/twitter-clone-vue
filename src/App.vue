@@ -28,8 +28,7 @@
     <tweet></tweet>
   </div>
   <div id="right">
-    <trending-bar></trending-bar>
-    <who-to-follow></who-to-follow>
+    <side-bar></side-bar>
   </div>
   </div>
   
@@ -83,12 +82,12 @@ import EmoticonOutlineIcon from 'vue-material-design-icons/EmoticonOutline.vue';
 import TimerOutlineIcon from 'vue-material-design-icons/TimerOutline.vue';
 
 import Tweet from './components/Tweet.vue'
-import WhoToFollow from './components/WhoToFollow.vue'
-import TrendingBar from './components/TrendingBar.vue'
 import NavigationBar from './components/NavigationBar.vue'
+
+import SideBar from './components/SideBar.vue';
 
 export default {
     components: {ImageOutlineIcon,
-      FileGifBoxIcon, PollIcon, EmoticonOutlineIcon, TimerOutlineIcon, Tweet, WhoToFollow, TrendingBar, NavigationBar},
+      FileGifBoxIcon, PollIcon, EmoticonOutlineIcon, TimerOutlineIcon, Tweet, NavigationBar, SideBar},
 }
 </script>
