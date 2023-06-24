@@ -1,7 +1,8 @@
 <template>
    <div id ="ads" style="background-color: lightgray;">
-    <div>Search Twitter</div>
     <div><h2>What's happening</h2>
+      <Trend></Trend>
+      <Trend></Trend>
       <Trend></Trend>
       <Trend></Trend>
       <Trend></Trend>
@@ -17,6 +18,7 @@
 
 
 import Trend from './Trend.vue';
+
 
 export default{
     components: {

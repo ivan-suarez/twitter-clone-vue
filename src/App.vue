@@ -45,6 +45,8 @@
   border-color: lightgray;
   flex: 1;
   min-height: 100vh;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 #tweet{
