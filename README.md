@@ -1,6 +1,6 @@
 # tw-clone
 
-![Alt text](screenshot.png)
+![Alt text](screenshot.png?)
 
 A non-functional Twitter frontend clone, just for CSS practice.
 
