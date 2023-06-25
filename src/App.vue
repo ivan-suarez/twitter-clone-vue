@@ -72,6 +72,15 @@
   justify-content: flex-end;
 }
 
+button{
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 9999px;
+  min-height: 40px;
+  min-width: 80px;
+  font-weight: 900;
+}
+
 </style>
 
 <script>
