@@ -30,6 +30,14 @@
     </div>
     
     <tweet></tweet>
+    <tweet></tweet>
+    <tweet></tweet>
+    <tweet></tweet>
+    <tweet></tweet>
+    <tweet></tweet>
+    <tweet></tweet>
+    <tweet></tweet>
+    <tweet></tweet>
   </div>
   <div id="right">
     <side-bar></side-bar>
