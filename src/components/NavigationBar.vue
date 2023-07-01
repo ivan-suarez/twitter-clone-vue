@@ -1,7 +1,7 @@
 <template>
     <div id="nav-bar">
         <div id="logo">
-          <twitter-icon :size="36" class="icon"/>
+          <twitter-icon :size="36" style="color:dodgerblue" class="icon"/>
         </div>
         <div class="nav-bar-item"><home-icon :size="36" class="icon"/> <span>Home</span></div>
         <div class="nav-bar-item"><search-web-icon :size="36" class="icon"/><span>Explore</span> </div>

@@ -12,15 +12,19 @@
     </div>
     
   <div id="content">
-    <div>Home</div>
-    <div>What is happening?!
+    <h2>Home</h2>
+    <div style="display:flex;flex-direction:column;justify-content: space-between;min-height: 100px;">
+      <div style="font-size: x-large;">What is happening?!</div>
       
-      <div>
-        <image-outline-icon :size="26" class="icon"/>
-        <file-gif-box-icon :size="26" class="icon"/> 
-        <poll-icon :size="26" class="icon"/> 
-        <emoticon-outline-icon :size="26" class="icon"/> 
-        <timer-outline-icon :size="26" class="icon"/>
+      <div style="display:flex;justify-content: space-between;">
+        <div>
+          <image-outline-icon :size="26" style="color:dodgerblue" class="icon"/>
+        <file-gif-box-icon :size="26" style="color:dodgerblue" class="icon"/> 
+        <poll-icon :size="26" style="color:dodgerblue" class="icon"/> 
+        <emoticon-outline-icon :size="26" style="color:dodgerblue" class="icon"/> 
+        <timer-outline-icon :size="26" style="color:dodgerblue" class="icon"/>
+        </div>
+        
         <button>Tweet</button>
       </div>
     </div>
@@ -43,7 +47,7 @@
 #content{
   border-style: solid;
   border-color: lightgray;
-  flex: 1;
+  flex: 0.75;
   min-height: 100vh;
   margin-left: 30px;
   margin-right: 30px;
